@@ -1,0 +1,26 @@
+<!-- Progress Bar -->
+<mat-progress-bar *ngIf="valueProgress < 100" mode="indeterminate" [value]="valueProgress"></mat-progress-bar>
+
+<div id="widgetsBlog" class="widgetsBlog">
+
+    <div *ngFor="let post of blog"> 
+        <div class="card">
+            <img [src]="post.imageTitle" class="capa" (click)="buttonRead(post)">
+            <div class="label">
+                <span class="category">
+                    {{post.categories | uppercase }}
+                </span>
+
+                <span class="title condense" (click)="buttonRead(post)">
+                    {{post.title | uppercase}}
+                </span>
+
+                <span class="dateAndBy">
+                    {{post.date}}
+                </span>
+            </div>
+            <br>
+        </div>    
+      </div>
+
+</div>

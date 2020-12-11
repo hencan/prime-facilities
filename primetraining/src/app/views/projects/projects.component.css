@@ -1,0 +1,221 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  animation: fadeInOut 0.5s forwards ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    filter: opacity(0%);
+  }
+  100% {
+    filter: opacity(100%);
+  }
+}
+
+button, a {
+  font-size: 1rem;
+  color: rgb(241, 243, 244);
+  background-color: rgb(25, 26, 31);
+  margin: 10px auto;
+  transition: background-color 0.5s
+}
+
+button:hover {
+  background-color: rgb(96, 96, 96);
+  color: rgb(241, 243, 244);
+}
+
+a:hover {
+  background-color: rgb(96, 96, 96);
+  color: rgb(241, 243, 244);
+}
+
+.search {
+  margin: 0 5%;
+}
+
+table {
+  margin: 0 5%;
+  margin-left: calc(5% - 24px);
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+  padding: 20px 5%;
+  color: rgb(29, 165, 79);
+}
+
+.capa {
+  width: 300px;
+  margin: 10px 10px 10px 0;
+  border: solid 1px rgb(66, 66, 78);
+  border-radius: 2.5px;
+}
+
+.titleColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  margin: 0;
+  color: rgb(29, 165, 79);
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
+.title {
+  margin: 10px 0 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgb(31, 31, 31);
+  padding: 0 10px;
+}
+
+.dateAndBy {
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(31, 31, 31);
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 200;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  padding: 5px 10px;
+  margin: 10px 0;
+}
+
+.subtitle, .content {
+  font-size: 1rem;
+  font-weight: 200;
+  color: rgb(31, 31, 31);
+  padding: 10px 10px 20px;
+}
+
+.buttonsGoto {
+  margin: 10px 0;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+/* Animação da tabela */
+
+.cardDetailHiddenRow {
+  height: 0;
+}
+
+.cardDetailHiddenRow td {
+  border-bottom-width: 0;
+}
+
+.cardDetailRow {
+  height: 0;
+}
+
+.cardDetailHidden {
+  overflow: hidden;
+  display: flex;
+}
+
+.cardDetailExpanded {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  width: 100%;
+}
+
+tr.cardDetailHiddenRow:hover {
+  filter: brightness(95%);
+  cursor: pointer;
+}
+
+tr.cardDetailHiddenRow:active {}
+
+.paginator {
+  padding: 0 5%;
+}
+
+/* Visualização Desktop */
+
+@media(min-width: 1055.5px) {}
+
+/* Visualização Mobile */
+
+@media(max-width: 1055px) {
+  /* .projects {
+      padding: 5px;
+    } */
+  .header {
+    padding: 20px 10px;
+  }
+  table {
+    margin: 0 10px;
+  }
+  .mat-row {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  .mat-cell:first-of-type {
+    padding-left: 0;
+  }
+  .mat-cell {
+    padding-right: 0;
+  }
+  .category {
+    margin: 2.5px 0 0;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0;
+  }
+  .title {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+  }
+  .dateAndBy {
+    margin: 5px 0 0;
+    font-size: 0.8rem;
+    font-weight: 100;
+    text-align: right;
+    padding: 0;
+  }
+  .label {
+    padding: 0;
+    margin: 10px 0;
+  }
+  .subtitle {
+    padding: 0 0 10px;  
+  }
+  .content {
+    padding: 0 0 10px;
+  }
+  .capa {
+    width: 100%;
+    margin: 0;
+    transform: translateX(-1.5px);
+  }
+  .cardDetailHidden {
+    width: 100%;
+    padding: 0;
+    transform: translateX(12px);
+  }
+  .cardDetailExpanded {
+    padding: 0;
+  }
+  .search {
+    margin: 0 10px;
+  }
+}

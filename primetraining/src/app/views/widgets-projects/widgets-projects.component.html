@@ -1,0 +1,23 @@
+<!-- Progress Bar -->
+<mat-progress-bar *ngIf="valueProgress < 100" mode="indeterminate" [value]="valueProgress"></mat-progress-bar>
+
+<div id="widgetsProjects" class="widgetsProjects">
+    <div class="box" *ngFor="let project of projects">
+        <div class="card">
+            <img [src]="project.imageTitle" class="capa" (click)='goTo3(project.id)'>
+            <div class="label">
+                <span class="category">
+                    {{project.categories | uppercase }}
+                </span>
+
+                <span class="title condense" (click)='goTo3(project.id)'>
+                    {{project.title | uppercase}}
+                </span>
+
+                <span class="dateAndBy">
+                    {{project.date}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

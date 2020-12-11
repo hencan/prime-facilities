@@ -1,0 +1,126 @@
+.widgetsServices {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-X: scroll;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 50px 0 25px;
+}
+
+.card {
+    width: 18vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    border: solid 3px rgba(76, 76, 76, 0.35);
+    border-radius: 5px;
+    margin: 0 20px 0 0;
+    background-color: white;
+}
+
+.capa {
+    width: 30%;
+    border-radius: 5px 5px 0 0;
+    margin-left: 35%;
+    padding: 30px 0 20px;
+    /* background-color: rgb(29, 165, 79); */
+}
+
+.capa:hover, .title:hover {
+    filter: opacity(50%);
+    cursor: pointer;
+    transition: filter 0.5s
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* padding: 10px; */
+}
+
+.category {
+    margin: 10px 0 5px;
+    color: rgb(76, 76, 76);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(31, 31, 31);
+    padding: 0 10px;
+    margin: 10px 0 5px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(31, 31, 31);
+    padding: 0 10px;
+    margin: 0 0 5px;
+}
+
+.condense {
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    height: 15px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background-color: rgba(44, 55, 66, 0.5);
+    border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(58, 244, 157, 0.75);
+    border-radius: 10px;
+}
+
+/* Visualização Desktop */
+
+@media(min-width: 650.5px) {}
+
+/* Visualização Mobile */
+
+@media(max-width: 650px) {
+    .widgetsServices {
+        /* margin: 0 5px; */
+        /* flex-direction: column; */
+    }
+    .card {
+        width: 40vw;
+        height: 250px;
+        border: solid 2px rgba(76, 76, 76, 0.5);
+    }
+    .capa {
+        /* width: 50%; */
+        /* margin-left: 2.5%; */
+    }
+    .label {
+        width: 100%;
+    }
+    .title {
+        text-align: center;
+    }
+    .subtitle {
+        text-align: center;
+    }
+}

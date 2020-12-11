@@ -1,0 +1,16 @@
+#navHeader {
+    /* height: 3px; */
+    /* background-color: rgb(1, 229, 137); */
+    /* background-color: rgb(29, 116, 245); */
+    /* background: linear-gradient(0deg, white 33%, rgb(33, 44, 55) 66%); */
+}
+
+/* Visualização Desktop */
+@media(min-width: 955.5px) {
+    
+}
+
+/* Visualização Mobile */
+@media(max-width: 955px) {
+
+}

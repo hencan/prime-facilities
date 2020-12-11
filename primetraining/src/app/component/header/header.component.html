@@ -1,0 +1,128 @@
+<div id="header" class="header">
+    <mat-toolbar id="toolbar" class="toolbar">
+        <button class="showInMobile" matTooltip="Menu" mat-button [matMenuTriggerFor]="menuMobile">
+            <mat-icon id="iconMenuMobile">menu</mat-icon>
+        </button>
+        <div>
+            <img width="28px" height="28px" [src]="logo01" alt="" (click)='goTo("")'>
+            <button mat-button class="title hideInMobile" (click)='goTo("")'>
+                Prime Training
+            </button>
+        </div>
+        <div class="buttons">
+            <div class="hideInMobile">
+                <button mat-button (click)='goTo("")'>
+                    HOME
+                </button>
+                <button mat-button (click)='goTo3("whoWeAre")'>
+                    QUEM SOMOS
+                </button>
+                <button mat-button [matMenuTriggerFor]="services">
+                    SERVIÇOS
+                </button>
+                <button mat-button [matMenuTriggerFor]="projects">
+                    PROJETOS
+                </button>
+                <button mat-button [matMenuTriggerFor]="blog">
+                    BLOG
+                </button>
+                <button mat-button (click)='goTo("contact")'>
+                    CONTATO
+                </button>
+
+                <mat-menu #services>
+                    <button mat-menu-item (click)='goTo3("ourServices")'>
+                        Apresentação dos Serviços
+                    </button>
+                    <button mat-menu-item (click)='goTo("services")'>
+                        Todos os Serviços
+                    </button>
+                </mat-menu>
+
+                <mat-menu #projects>
+                    <button mat-menu-item (click)='goTo3("ourProjects")'>
+                        Últimos Proj. e Serv. Realizados
+                    </button>
+                    <button mat-menu-item (click)='goTo("projects")'>
+                        Projetos e Serviços Realizados
+                    </button>
+                </mat-menu>
+
+                <mat-menu #blog>
+                    <button mat-menu-item (click)='goTo3("lastPosts")'>
+                        Últimos Posts do Blog
+                    </button>
+                    <button mat-menu-item (click)='goTo("blog")'>
+                        Todos os Posts do Blog
+                    </button>
+                </mat-menu>
+
+                <mat-menu #menuMobile>
+                    <button mat-menu-item (click)='goTo("")'>
+                        <mat-icon>home</mat-icon>
+                        Home
+                    </button>
+                    <button mat-menu-item (click)='goTo3("whoWeAre")'>
+                        <mat-icon>supervised_user_circle</mat-icon>
+                        Quem Somos
+                    </button>
+                    <button mat-menu-item [matMenuTriggerFor]="services">
+                        <mat-icon>engineering</mat-icon>
+                        Serviços
+                    </button>
+                    <button mat-menu-item [matMenuTriggerFor]="projects">
+                        <mat-icon>receipt_long</mat-icon>
+                        Projetos
+                    </button>
+                    <button mat-menu-item [matMenuTriggerFor]="blog">
+                        <mat-icon>crop_original</mat-icon>
+                        Blog
+                    </button>
+                    <button mat-menu-item (click)='goTo("contact")'>
+                        <mat-icon>connect_without_contact</mat-icon>
+                        Contato
+                    </button>
+                </mat-menu>
+            </div>
+            <div>
+                <button id="buttonLogin" mat-button (click)='goTo2("login")' matTooltip="Login">
+                    <mat-icon>login </mat-icon>
+                </button>
+                <button id="buttonLogged" matTooltip="Perfil, Admin e Logoff" mat-button [matMenuTriggerFor]="menu">
+                    <img id="buttonLogged_Img" [src]="loggedAs.photo" alt="">
+                    <!-- <span id="buttonLogged_Span" class="hideInMobile">{{loggedAs.fname}}</span> -->
+                </button>
+                <mat-menu #menu>
+                    <button mat-menu-item (click)='goTo("admin/home")'>
+                        <mat-icon>home</mat-icon>
+                        Editar Home
+                    </button>
+                    <button mat-menu-item (click)='goTo("admin/ourservices")'>
+                        <mat-icon>engineering</mat-icon>
+                        Nossos Serviços
+                    </button>
+                    <button mat-menu-item (click)='goTo("admin/projects")'>
+                        <mat-icon>apps</mat-icon>
+                        Posts de Projetos
+                    </button>
+                    <button mat-menu-item (click)='goTo("admin/blog")'>
+                        <mat-icon>library_books</mat-icon>
+                        Posts do Blog
+                    </button>
+                    <button mat-menu-item (click)='goTo("admin/users")'>
+                        <mat-icon>people</mat-icon>
+                        Usuários
+                    </button>
+                    <button mat-menu-item (click)='goTo("admin/config")'>
+                        <mat-icon>storage</mat-icon>
+                        Banco de Dados
+                    </button>
+                    <button mat-menu-item (click)='goTo2("login")'>
+                        <mat-icon>login</mat-icon>
+                        Logoff
+                    </button>
+                </mat-menu>
+            </div>
+        </div>
+    </mat-toolbar>
+</div>

@@ -1,0 +1,22 @@
+<div id="widgetsServices" class="widgetsServices">
+
+    <!-- Progress Bar -->
+    <mat-spinner *ngIf="valueProgress < 100"></mat-spinner>
+
+    <!-- Conteúdo -->
+    <div class="box" *ngFor="let service of services">
+        <div class="card">
+            <img [src]="service.imageTitle" class="capa" (click)='goTo3(service.id)'>
+            <div class="label">
+                <span class="title condense" (click)='goTo3(service.id)'>
+                    {{service.title | uppercase}}
+                </span>
+
+                <span class="subtitle condense" (click)='goTo3(service.id)'>
+                    {{service.subtitle}}
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div>

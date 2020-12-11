@@ -1,0 +1,525 @@
+.home {
+
+}
+mat-list {
+    padding: 6% 5%;
+}
+
+.intro {
+    background-image: url('../../../assets/images/bg01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 60px);
+}
+.intro_logo {
+    background-color: rgba(29, 165, 79, 0.95);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.intro_logo2 {
+    max-width: 300px;
+    margin-top: calc(((100vh -60px) - 258px)/2);
+    margin-left: calc((100% - 300px)/2);
+    animation: fadeInOut 1.5s forwards ease-in-out;
+    /* margin-bottom: 50px; */
+}
+@keyframes fadeInOut {
+    0% {
+        filter: opacity(0%);
+    }
+    100% {
+        /* transform: rotateY(360deg); */
+        filter: opacity(100%);
+    }
+}
+.logoAndText span {
+    color: white;
+    width: auto;
+    letter-spacing:1px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: auto;
+}
+.slogan01 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.slogan02 {
+    font-size: 3rem;
+    letter-spacing:2px;
+}
+.whoWeAre {
+    background-image: url('../../../assets/images/bg02.png');
+    background-repeat: no-repeat;
+    background-position:right bottom;
+    background-size: 400px;
+    background-blend-mode: screen;    
+    min-height: calc(100vh - 60px);
+    /* background-color: transparent; */
+}
+.wwaBox01 {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 0 5%;
+}
+.wwaBox01_title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(29, 165, 79);
+    padding: 0 0 30px;
+}
+.wwaBox01_text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(30, 30, 28);
+    text-align: justify;
+}
+.wwaBox02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.wwaBox02_A {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: solid 3px rgba(128, 128, 128, 0.50);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.wwaBox02_A img {
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 35%;
+}
+.wwaBox02Span01 {
+    text-align: center;
+    color: rgb(29, 165, 79);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px 0 10px;
+}
+.wwaBox02Span02 {
+    text-align: center;
+    padding: 15px;
+    /* background-color: rgba(29, 165, 79, 0.25); */
+    font-size: 1rem;
+    height: auto;
+}
+.ourServices {
+    min-height: calc(100vh - 60px);
+    padding: 0 5%;
+}
+.osBox01 {
+    display: flex;
+    flex-direction: column;
+}
+.osBox01_title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(29, 165, 79);
+    padding: 0 0 30px;
+}
+.osBox02 {
+    display: flex;
+    flex-direction: row;
+    border: solid 2px rgba(128, 128, 128, 0.50);
+    background-color: rgba(29, 165, 79, 0.25);
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.osBox03 {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: space-around;
+}
+.osBox03_title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(29, 165, 79);
+    padding: 0 0 10px;
+}
+.osBox03_text {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(30, 30, 28);
+    text-align: justify;
+    padding-right: 15px;
+}
+.osBox03Img {
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    margin-left: auto;
+}
+.osBox04 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.osBox04_A {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+}
+.osBox04_A img {
+    width: 30%;
+    margin-left: 35%;
+}
+.osBox04Span01 {
+    text-align: center;
+    color: rgb(29, 165, 79);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+.osBox04Span02 {
+    text-align: justify;
+    padding: 20px;
+    background-color: rgb(29, 165, 79);
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.osBox01_text, .osBox02_text, .osBox04_text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(30, 30, 28);
+    text-align: justify;
+}
+
+.ourProjects {
+    /* min-height: calc(100vh - 60px); */
+    height: auto;
+}
+.opBox01 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+}
+.opBox01_title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(29, 165, 79);
+    padding: 0 0 30px;
+}
+.opBox04 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* margin-top: 50px; */
+}
+.opBox04_A {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 10px;
+    border: solid 2px rgba(128, 128, 128, 0.50);
+    border-radius: 5px;
+}
+.opBox04_A img {
+    width: 280px;
+    background-color: black;
+    border-radius: 5px 5px 0 0;
+}
+.opBox04Span01 {
+    color: rgb(29, 165, 79);
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.opBox04Span02 {
+    text-align: justify;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.lastPosts {
+    /* min-height: calc(100vh - 60px); */
+    height: auto;
+    padding-bottom: 100px;
+}
+.lpBox01 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+}
+.lpBox01_title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(29, 165, 79);
+    padding: 0 0 20px;
+}
+
+.footer01 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(16, 16, 16);
+    margin-top: 25px;
+    padding: 50px 5%;
+    justify-content: space-between;
+}
+.footer01Colum01 {
+    display: flex;
+    flex-direction: row;
+}
+.footer01Colum01 span {
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    vertical-align: middle;
+    padding: 5px;
+    cursor: default;
+}
+.footer01Colum01 img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: default;
+}
+.footer01Colum02 {
+    display: flex;
+    flex-direction: column;
+}
+.footer01Colum02 span {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.footer01Colum02 span:hover {
+    color: rgb(29, 165, 79);
+}
+.footer01Colum02 button {
+    background-color: white; 
+    color: black; 
+    font-weight: 600;
+}
+.footerTitle {
+    color: white;
+    /* font-weight: 600; */
+    font-size: 1.1rem;
+    vertical-align: middle;
+    padding: 5px 0;
+    cursor: default;
+}
+.footer02 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(16, 16, 16);
+    padding: 0 5% 20px;
+}
+.footer02 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer02 div mat-icon {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 2px;
+    vertical-align: middle;
+}
+.footer02 div span {
+    color: rgba(255, 255, 255, 0.75);
+}
+.footer03 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(16, 16, 16);
+    padding: 0 5% 20px;
+}
+.footer03 img {
+    width: 25px;
+    height: 25px;
+    padding-top: 2px;
+    margin-left: auto;
+    margin-right: 5px;
+}
+.footer03 a {
+    font-style: italic;
+    color: white;
+    font-size: 0.9rem;
+    vertical-align: middle;
+    padding: 5px;
+    text-decoration: none;
+}
+.footer03 a:hover {
+    font-weight: 600;
+}
+
+
+@media(min-width: 1055.5px) {
+    
+}
+
+/* Visualização Mobile */
+@media(max-width: 1055px) {
+    .intro {
+        height: calc(100vh - 60px);
+    }    
+    .intro_logo2 {
+        max-width: 150px;
+        margin-top: calc((100vh - 200px)/2);
+        margin-left: calc((100% - 150px)/2);
+    }
+    .whoWeAre {
+        background-position:right top;
+        background-size: 85%;
+        min-height: calc(50vh - 60px);
+        width: 100%;
+    }
+    .wwaBox01 {
+        background-color: rgba(255, 255, 255, 0.75);
+        width: 90%;
+        padding: 0 5%;
+    }
+    .wwaBox01_title {
+        font-size: 1.1rem;
+        padding: 0 0 10px;
+    }
+    .wwaBox01_text {
+        font-size: 0.7rem;
+        text-align: left;
+    }        
+    .wwaBox02 {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .wwaBox02_A {
+        width: 100%;
+    }
+    .wwaBox02_A img {
+        width: 60px;
+        margin-left: calc(50% - 30px);
+    }
+    .wwaBox02Span01 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 10px 0 5px;
+        padding: 0;
+    }
+    .wwaBox02Span02 {
+        padding: 5px 10px 0;
+        font-size: 0.7rem;
+        margin-bottom: 20px;
+    }
+    .ourServices {
+        min-height: calc(100vh - 60px);
+        width: 90%;
+        padding: 0 5%;
+    }
+    .osBox01_title {
+        font-size: 1.1rem;
+        padding: 0 0 20px;
+    }
+    .osBox01_text, .osBox02_text, .osBox04_text {
+        font-size: 0.7rem;
+    }        
+    .osBox03 {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .osBox03_title {
+        font-size: 1.2rem;
+        padding: 0 0 10px;
+    }
+    .osBox03_text {
+        font-size: 0.7rem;
+        text-align: left;
+        padding-right: 0px;
+    }
+    .opBox01 {
+        width: 90%;
+        padding: 0 5%;
+    }    
+    .osBox03Img {
+        display: none;
+    }
+    .opBox01_title {
+        font-size: 1.1rem;
+        padding: 0 0 20px;
+    }
+    .lpBox01_title {
+        font-size: 1.1rem;
+        padding: 0 0 20px;
+    }
+    .footer01 {
+        flex-direction: column;
+        margin-top: 0;
+        padding: 25px 2.5%;
+        text-align: center;
+    }
+    .footer01Colum01 {
+        width: 200px;
+        margin-left: calc((100% - 200px)/2);
+        margin-bottom: 10px;
+    }
+    .footer01Colum01 span {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    .footer01Colum01 img {
+    }
+    .footer01Colum02 {
+        margin-bottom: 10px;
+    }
+    .footer01Colum02 span {
+    }
+    .footer01Colum02 span:hover {
+    }
+    .footer01Colum02 button {
+    }
+    .footerTitle {
+        font-size: 1rem;
+        vertical-align: middle;
+        font-weight: 500;
+    }
+    .footer02 {
+        padding: 0 5% 10px;
+        border: none;
+        text-align: center;
+    }
+    .footer02 div {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer02 div mat-icon {
+        font-size: 1rem;
+        color: white;
+        padding: 6px 5px 0 0;
+        margin-left: 0;
+    }
+    .footer02 div span {
+        margin-bottom: 5px;    
+    }
+    .footer03 {
+        padding: 0 5% 10px;
+    }
+    .footer03 img {
+        width: 15px;
+        height: 15px;
+        padding-top: 7px;
+    }
+    .footer03 a {
+        font-size: 0.6rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+}

@@ -1,0 +1,43 @@
+#homeAdmin {
+    display: none;
+}
+.homeAdmin {
+    margin: 16px;
+}
+.card {
+    /* width: 95%; */
+}
+.cardForm {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+textarea {
+    min-height: 150px;
+}
+.primaryGreen {
+    color: rgb(1, 229, 137);
+}
+.primaryBtnGreen {
+    background-color: rgb(1, 229, 137);
+}
+.primaryBtnBlue {
+    background-color: rgba(65, 105, 225, 0.75);
+}
+
+@keyframes opac{
+    from{opacity:0} 
+    to{opacity:1}
+}
+
+/* Visualização Desktop */
+@media(min-width: 650.5px) {
+    
+}
+
+/* Visualização Mobile */
+@media(max-width: 650px) {
+    .homeAdmin {
+        padding: 5px;
+    }
+}

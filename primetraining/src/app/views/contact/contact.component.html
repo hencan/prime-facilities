@@ -1,0 +1,29 @@
+<div class="contact">
+    <span class="header">Nossos Contatos</span>
+
+    <img [src]="images.logo04" alt="">
+
+    <div class="footer02">
+        <div>
+            <span *ngIf='storeData.contact_address'><mat-icon>place</mat-icon>{{storeData.contact_address}}</span>
+            
+            <span *ngIf='storeData.contact_email1'><mat-icon>email</mat-icon>{{storeData.contact_email1}}</span>
+
+            <span *ngIf='storeData.contact_email2'><mat-icon>email</mat-icon>{{storeData.contact_email2}}</span>
+
+            <span *ngIf='storeData.contact_email3'><mat-icon>email</mat-icon>{{storeData.contact_email3}}</span>
+            
+            <span *ngIf='storeData.contact_site'><mat-icon>public</mat-icon>{{storeData.contact_site}}</span>
+        </div>
+        <div>
+            <span *ngIf='storeData.contact_telFixo'><mat-icon>phone</mat-icon>{{storeData.contact_telFixo}}</span>
+            
+            <span *ngIf='storeData.contact_cel1'><mat-icon>phone_android</mat-icon>{{storeData.contact_cel1}}</span>
+            
+            <span *ngIf='storeData.contact_cel2'><mat-icon>phone_android</mat-icon>{{storeData.contact_cel2}}</span>
+
+            <span *ngIf='storeData.contact_cel3'><mat-icon>phone_android</mat-icon>{{storeData.contact_cel3}}</span>
+        </div>
+    </div>
+    
+</div>

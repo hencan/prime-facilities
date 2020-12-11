@@ -1,0 +1,177 @@
+<div id="homeAdmin">
+
+    <app-admin></app-admin>
+
+    <div class="homeAdmin">
+        <mat-card class="card">
+
+            <!-- Title Card Form -->
+            <mat-card-subtitle>Editar Página Home</mat-card-subtitle>
+
+            <form class="cardForm">
+
+                <!-- qs_title Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Título - Quem Somos</mat-label>
+                    <input matInput #input1 maxlength="50" placeholder="Digite o Título da Apresentação da empresa aqui"
+                        id="qs_title" name="qs_title" [(ngModel)]="storeData.qs_title">
+                    <mat-hint align="end">{{input1.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+                <!-- qs_text Field -->
+                <mat-label>Texto - Quem Somos</mat-label>
+                <angular-editor #input2 id="qs_text" [(ngModel)]="storeData.qs_text" [config]="editorConfig"
+                    [ngModelOptions]="{standalone: true}">
+                </angular-editor>
+                <br>
+
+                <!-- diferenciais_text Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Texto - Diferenciais da Empresa</mat-label>
+                    <textarea matInput #input3 maxlength="500"
+                        placeholder="Digite o texto dos Diferenciais da empresa aqui" id="diferenciais_text"
+                        name="diferenciais_text" [(ngModel)]="storeData.diferenciais_text"></textarea>
+                    <mat-hint align="end">{{input3.value?.length || 0}}/500</mat-hint>
+                </mat-form-field>
+
+                <!-- missao_text Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Texto - Missão da Empresa</mat-label>
+                    <textarea matInput #input4 maxlength="500" placeholder="Digite o texto da Missão da empresa aqui"
+                        id="missao_text" name="missao_text" [(ngModel)]="storeData.missao_text"></textarea>
+                    <mat-hint align="end">{{input4.value?.length || 0}}/500</mat-hint>
+                </mat-form-field>
+
+                <!-- visao_text Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Texto - Visão da Empresa</mat-label>
+                    <textarea matInput #input5 maxlength="500" placeholder="Digite o texto da Visão da empresa aqui"
+                        id="visao_text" name="visao_text" [(ngModel)]="storeData.visao_text"></textarea>
+                    <mat-hint align="end">{{input5.value?.length || 0}}/500</mat-hint>
+                </mat-form-field>
+
+                <!-- ns_title Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Título - Nossos Serviços</mat-label>
+                    <input matInput #input6 maxlength="50"
+                        placeholder="Digite o Título da Apresentação dos Serviços da empresa aqui" id="ns_title"
+                        name="ns_title" [(ngModel)]="storeData.ns_title">
+                    <mat-hint align="end">{{input6.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+                <!-- ns_text Field -->
+                <mat-label>Texto - Nossos Serviços</mat-label>
+                <angular-editor #input7 id="ns_text" [(ngModel)]="storeData.ns_text" [config]="editorConfig"
+                    [ngModelOptions]="{standalone: true}">
+                </angular-editor>
+                <br>
+
+                <!-- box_title1 Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Título 1 - Box</mat-label>
+                    <input matInput #input8 maxlength="50" placeholder="Digite o Título 1 da Caixa" id="box_title1"
+                        name="box_title1" [(ngModel)]="storeData.box_title1">
+                    <mat-hint align="end">{{input8.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+                <!-- box_text1 Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Texto 1 - Box</mat-label>
+                    <textarea matInput #input9 maxlength="1000" placeholder="Digite o Texto 1 da Caixa" id="box_text1"
+                        name="box_text1" [(ngModel)]="storeData.box_text1"></textarea>
+                    <mat-hint align="end">{{input9.value?.length || 0}}/1000</mat-hint>
+                </mat-form-field>
+
+                <!-- box_title2 Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Título 2 - Box</mat-label>
+                    <input matInput #input10 maxlength="50" placeholder="Digite o Título 2 da Caixa" id="box_title2"
+                        name="box_title2" [(ngModel)]="storeData.box_title2">
+                    <mat-hint align="end">{{input10.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+                <!-- box_text2 Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Texto 2 - Box</mat-label>
+                    <textarea matInput #input11 maxlength="1000" placeholder="Digite o Texto 2 da Caixa" id="box_text2"
+                        name="box_text2" [(ngModel)]="storeData.box_text2"></textarea>
+                    <mat-hint align="end">{{input11.value?.length || 0}}/1000</mat-hint>
+                </mat-form-field>
+
+                <!-- contact_address Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Contato - Endereço</mat-label>
+                    <input matInput #input12 maxlength="400" placeholder="Digite o Endereço da Empresa"
+                        id="contact_address" name="contact_address" [(ngModel)]="storeData.contact_address">
+                    <mat-hint align="end">{{input12.value?.length || 0}}/400</mat-hint>
+                </mat-form-field>
+
+                <!-- contact_site Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Contato - Site</mat-label>
+                    <input matInput #input13 maxlength="50" placeholder="Digite o Site da Empresa" id="contact_site"
+                        name="contact_site" [(ngModel)]="storeData.contact_site">
+                    <mat-hint align="end">{{input13.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+                <!-- contact_email1 Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Contato - Email 1</mat-label>
+                    <input matInput #input14 maxlength="50" placeholder="Digite o Email 1 da Empresa"
+                        id="contact_email1" name="contact_email1" [(ngModel)]="storeData.contact_email1">
+                    <mat-hint align="end">{{input14.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+                <!-- contact_email2 Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Contato - Email 2</mat-label>
+                    <input matInput #input15 maxlength="50" placeholder="Digite o Email 2 da Empresa"
+                        id="contact_email2" name="contact_email2" [(ngModel)]="storeData.contact_email2">
+                    <mat-hint align="end">{{input15.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+                <!-- contact_email3 Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Contato - Email 3</mat-label>
+                    <input matInput #input16 maxlength="50" placeholder="Digite o Email 3 da Empresa"
+                        id="contact_email3" name="contact_email3" [(ngModel)]="storeData.contact_email3">
+                    <mat-hint align="end">{{input16.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+                <!-- contact_telFixo Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Contato - Telefone Fixo</mat-label>
+                    <input matInput #input17 maxlength="50" placeholder="Digite o Telefone Fixo da Empresa"
+                        id="contact_telFixo" name="contact_telFixo" [(ngModel)]="storeData.contact_telFixo">
+                    <mat-hint align="end">{{input17.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+                <!-- contact_cel1 Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Contato - Celular 1</mat-label>
+                    <input matInput #input18 maxlength="50" placeholder="Digite o Celular 1 da Empresa"
+                        id="contact_cel1" name="contact_cel1" [(ngModel)]="storeData.contact_cel1">
+                    <mat-hint align="end">{{input18.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+                <!-- contact_cel2 Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Contato - Celular 2</mat-label>
+                    <input matInput #input19 maxlength="50" placeholder="Digite o Celular 2 da Empresa"
+                        id="contact_cel2" name="contact_cel2" [(ngModel)]="storeData.contact_cel2">
+                    <mat-hint align="end">{{input19.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+                <!-- contact_cel3 Field -->
+                <mat-form-field appearance="outline" hintLabel="">
+                    <mat-label>Contato - Celular 3</mat-label>
+                    <input matInput #input20 maxlength="50" placeholder="Digite o Celular 3 da Empresa"
+                        id="contact_cel3" name="contact_cel3" [(ngModel)]="storeData.contact_cel3">
+                    <mat-hint align="end">{{input20.value?.length || 0}}/50</mat-hint>
+                </mat-form-field>
+
+            </form>
+        </mat-card>
+    </div>
+
+</div>

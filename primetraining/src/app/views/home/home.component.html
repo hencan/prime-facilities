@@ -1,0 +1,168 @@
+<!-- Progress Bar -->
+<mat-progress-bar *ngIf="valueProgress < 100" mode="indeterminate" [value]="valueProgress"></mat-progress-bar>
+
+<div class="home">
+
+    <!-- Introdução - Logo -->
+    <div class="intro">
+        <div class="intro_logo">
+            <img class="intro_logo2" [src]="images.logo02" alt="">
+        </div>
+    </div>
+
+    <mat-list id="whoWeAre">
+        <mat-divider></mat-divider>
+    </mat-list>
+
+    <!-- Quem Somos -->
+    <div class="whoWeAre">
+        <div class="wwaBox01">
+            <span class="wwaBox01_title">{{storeData.qs_title}}</span>
+            <span class="wwaBox01_text" [innerHtml]='storeData.qs_text'></span>
+            <div class="wwaBox02">
+                <div class="wwaBox02_A">
+                    <img [src]="images.icon01" alt="">
+                    <span class="wwaBox02Span01">DIFERENCIAIS</span>
+                    <span class="wwaBox02Span02">{{storeData.diferenciais_text}}</span>
+                </div>
+                <div class="wwaBox02_A">
+                    <img [src]="images.icon02" alt="">
+                    <span class="wwaBox02Span01">MISSÃO</span>
+                    <span class="wwaBox02Span02">{{storeData.missao_text}}</span>
+                </div>
+                <div class="wwaBox02_A">
+                    <img [src]="images.icon03" alt="">
+                    <span class="wwaBox02Span01">VISÃO</span>
+                    <span class="wwaBox02Span02">{{storeData.visao_text}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <mat-list id="ourServices">
+        <mat-divider></mat-divider>
+    </mat-list>
+
+    <!-- Nossos Serviços -->
+    <div class="ourServices">
+        <div class="osBox01">
+            <span class="osBox01_title">{{storeData.ns_title}}</span>
+            <span class="osBox01_text" [innerHtml]='storeData.ns_text'></span>
+        </div>
+
+        <app-widgets-services></app-widgets-services>
+
+        <div class="osBox02">
+            <div class="osBox03">
+                <span class="osBox03_title">{{storeData.box_title1}}</span>
+                <span class="osBox03_text">{{storeData.box_text1}}</span>
+                <br>
+                <span class="osBox03_title">{{storeData.box_title2}}</span>
+                <span class="osBox03_text">{{storeData.box_text2}}</span>
+            </div>
+            <img class="osBox03Img" [src]="images.image01" alt="">
+        </div>
+    </div>
+
+    <mat-list id="ourProjects">
+        <mat-divider></mat-divider>
+    </mat-list>
+
+    <!-- Ultimos Projetos Realizados -->
+    <div class="ourProjects">
+        <div class="opBox01">
+            <span class="opBox01_title">Últimos Projetos e Serviços Realizados</span>
+
+            <app-widgets-projects></app-widgets-projects>
+
+        </div>
+    </div>
+
+    <mat-list id="lastPosts">
+        <mat-divider></mat-divider>
+    </mat-list>
+
+    <!-- Ultimos Posts Blog -->
+    <div class="lastPosts">
+        <div class="lpBox01">
+            <span class="lpBox01_title">Últimos Posts do Blog</span>
+
+            <app-widgets-blog></app-widgets-blog>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer01">
+        <div class="footer01Colum02">
+            <div class="footerTitle">Quem Somos</div>
+            <span (click)='goTo("whoWeAre")'>Home - Quem Somos</span>
+        </div>
+        <div class="footer01Colum02">
+            <div class="footerTitle">Nossos Serviços</div>
+            <span (click)='goTo("ourServices")'>Nossos Serviços</span>
+            <span (click)='goTo2("services")'>Todos os Serviços</span>
+        </div>
+        <div class="footer01Colum02">
+            <div class="footerTitle">Projetos e Serviços</div>
+            <span (click)='goTo("ourProjects")'>Últimos Projetos e Serviços Realizados</span>
+            <span (click)='goTo2("projects")'>Projetos e Serviços Realizados</span>
+        </div>
+        <div class="footer01Colum02">
+            <div class="footerTitle">Blog</div>
+            <span (click)='goTo("lastPosts")'>Últimos Posts do Blog</span>
+            <span (click)='goTo2("blog")'>Todos os Posts do Blog</span>
+        </div>
+        <div class="footer01Colum02">
+            <div class="footerTitle">Contato</div>
+            <span (click)='goTo2("contact")'>Nosso Contato</span>
+        </div>
+    </div>
+
+    <div class="footer02">
+        <div>
+            <span *ngIf='storeData.contact_address'>
+                <mat-icon>place</mat-icon>{{storeData.contact_address}}
+            </span>
+
+            <span *ngIf='storeData.contact_email1'>
+                <mat-icon>email</mat-icon>{{storeData.contact_email1}}
+            </span>
+
+            <span *ngIf='storeData.contact_email2'>
+                <mat-icon>email</mat-icon>{{storeData.contact_email2}}
+            </span>
+
+            <span *ngIf='storeData.contact_email3'>
+                <mat-icon>email</mat-icon>{{storeData.contact_email3}}
+            </span>
+
+            <span *ngIf='storeData.contact_site'>
+                <mat-icon>public</mat-icon>{{storeData.contact_site}}
+            </span>
+        </div>
+        <div>
+            <span *ngIf='storeData.contact_telFixo'>
+                <mat-icon>phone</mat-icon>{{storeData.contact_telFixo}}
+            </span>
+
+            <span *ngIf='storeData.contact_cel1'>
+                <mat-icon>phone_android</mat-icon>{{storeData.contact_cel1}}
+            </span>
+
+            <span *ngIf='storeData.contact_cel2'>
+                <mat-icon>phone_android</mat-icon>{{storeData.contact_cel2}}
+            </span>
+
+            <span *ngIf='storeData.contact_cel3'>
+                <mat-icon>phone_android</mat-icon>{{storeData.contact_cel3}}
+            </span>
+        </div>
+    </div>
+
+    <div class="footer03">
+        <img [src]="images.logoHenCan" alt="">
+        <a href="https://hencan.github.io/portifolio/" target="_blank" rel="noopener noreferrer"
+            matTooltip="Abrir página do Desenvolvedor">Desenvolvido por HenCan</a>
+    </div>
+</div>

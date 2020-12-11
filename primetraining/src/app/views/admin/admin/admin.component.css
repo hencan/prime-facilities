@@ -1,0 +1,58 @@
+#admin {
+}
+.admin {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(29, 165, 79, 0.95);
+    background: linear-gradient(0deg, rgb(29, 165, 79) 10%, rgb(29, 165, 79)
+    95%);
+    color: white;
+    padding: 20px 5% 10px;
+}
+.adminHeader {
+    display: flex;
+    flex-direction: row;
+}
+.adminHeader img {
+    height: 75px;
+    background-color: white;
+    border: solid 1px whitesmoke;
+    border-radius: 50px;
+    margin: 10px 20px 5px 0;
+}
+.adminHeaderDetails {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
+.adminHeaderDetails mat-icon {
+    color: whitesmoke;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+.adminNav {
+    display: flex;
+    justify-content: flex-end;
+}
+.adminNav button {
+    margin-left: 2.5px;
+    height: 35px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+}
+
+/* Visualização Desktop */
+@media(min-width: 650.5px) {
+    
+}
+
+/* Visualização Mobile */
+@media(max-width: 650px) {
+    .adminNav {
+        display: none;
+    }
+    .adminHeader img {
+        height: 50px;
+    }
+}

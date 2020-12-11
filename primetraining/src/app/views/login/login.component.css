@@ -1,0 +1,56 @@
+#login {}
+.login {
+    background-color: rgb(241, 243, 244);
+    padding-left: calc((100% - 270px)/2);
+    padding-top: 10%;
+    height: calc(100% - 80px);
+    animation: fadeInOut 0.5s forwards ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        filter: opacity(0%);
+    }
+    100% {
+        /* transform: rotateY(360deg); */
+        filter: opacity(100%);
+    }
+}
+
+#logged {
+    display: none;
+}
+.logged {
+    background-color: rgb(241, 243, 244);
+    padding-left: calc((100% - 270px)/2);
+    padding-top: 10%;
+    height: calc(100% - 80px)
+}
+.loginCard {
+    width: 250px;
+    height: 230px;
+}
+.loginCardForm {
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    background-color: rgb(29, 165, 79);
+    color: white;
+}
+.button:hover {
+    background-color: rgba(29, 165, 79, 0.75);
+}
+
+/* Visualização Desktop */
+@media(min-width: 650.5px) {
+    
+}
+
+/* Visualização Mobile */
+@media(max-width: 650px) {
+    .login, .logged {
+        padding-top: 25%;
+    }
+
+}
