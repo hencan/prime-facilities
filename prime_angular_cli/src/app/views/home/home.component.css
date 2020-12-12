@@ -387,7 +387,7 @@ mat-list {
         padding: 0 0 10px;
     }
     .wwaBox01_text {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         text-align: left;
     }        
     .wwaBox02 {
@@ -409,7 +409,7 @@ mat-list {
     }
     .wwaBox02Span02 {
         padding: 5px 10px 0;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-bottom: 20px;
     }
     .ourServices {
@@ -422,7 +422,7 @@ mat-list {
         padding: 0 0 20px;
     }
     .osBox01_text, .osBox02_text, .osBox04_text {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }        
     .osBox03 {
         width: 100%;
@@ -433,7 +433,7 @@ mat-list {
         padding: 0 0 10px;
     }
     .osBox03_text {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         text-align: left;
         padding-right: 0px;
     }
